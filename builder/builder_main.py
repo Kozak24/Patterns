@@ -1,10 +1,10 @@
-from data import Pizza, DoughEnum, SauceEnum
+from logic import ClassicPizzaBuilder
 
 
 def main():
-    pizza = Pizza()
-    pizza.dough = DoughEnum.thin
-    pizza.sauce = SauceEnum.garlic
+    pizza_builder = ClassicPizzaBuilder()
+    pizza = pizza_builder.prepare() \
+        .bake()
     print(pizza)
 
 
