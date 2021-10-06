@@ -1,14 +1,11 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
-from typing import Optional, TYPE_CHECKING
+from typing import Optional
 
 from builder.data.pizza import Pizza
 
-if TYPE_CHECKING:
-    from builder.data import DoughEnum, SauceEnum, CheeseEnum
 
-
-class PizzaBuilder:
+class PizzaBuilder(ABC):
     def __init__(self, pizza: Optional[Pizza] = None):
         self._pizza = pizza if pizza is not None else Pizza()
 
@@ -18,18 +15,14 @@ class PizzaBuilder:
     def bake(self) -> Pizza:
         return self._pizza
 
-    def make_dough(self, dough: DoughEnum) -> PizzaBuilder:
-        self._pizza.dough = dough
-
+    @abstractmethod
+    def make_dough(self) -> PizzaBuilder:
         return self
 
-    def add_sauce(self, sauce: SauceEnum) -> PizzaBuilder:
-        self._pizza.sauce = sauce
+    @abstractmethod
+    def add_sauce(self) -> PizzaBuilder:
+        pass
 
-        return self
-
-    def add_cheese(self, cheese: CheeseEnum) -> PizzaBuilder:
-        self._pizza.add_cheese(cheese)
-
-        return self
-
+    @abstractmethod
+    def add_cheeses(self) -> PizzaBuilder:
+        pass
