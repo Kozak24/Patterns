@@ -1,4 +1,4 @@
-from builder.logic import PizzaBuilder
+from creational.builder.logic import PizzaBuilder
 
 
 class PizzaDirector:

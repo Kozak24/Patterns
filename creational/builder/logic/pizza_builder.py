@@ -2,7 +2,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import Optional
 
-from builder.data.pizza import Pizza
+from creational.builder.data.pizza import Pizza
 
 
 class PizzaBuilder(ABC):
