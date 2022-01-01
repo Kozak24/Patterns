@@ -15,3 +15,11 @@ Factory Method pattern example provides solution for Mail services with Ground a
 To run example, you simply need to run:
 
 > [factory_method_main.py](factory_method/factory_method_main.py)
+
+# Abstract Factory pattern
+
+Abstract Factory pattern example provides solution for game with two armies: Blue and Red, for each created corresponding factory class.
+
+To run example, you simply need to run:
+
+> [abstract_factory_main.py](abstract_factory/abstract_factory_main.py)
