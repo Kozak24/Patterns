@@ -1,4 +1,4 @@
-from creational.shared.factory_data import Parcel
+from creational.factory_method.data import Parcel
 from creational.factory_method.logic import GroundMailFactory, GroundTransport, AirMailFactory, AirTransport
 
 

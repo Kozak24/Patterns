@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 
-from creational.shared.factory_data import Transport
+from creational.factory_method.data import Transport
 
 
 class MailFactory(ABC):

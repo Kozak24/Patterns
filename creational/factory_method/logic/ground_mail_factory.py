@@ -1,7 +1,5 @@
 from creational.factory_method.logic.mail_factory import MailFactory
-from creational.shared.factory_data import Transport, Truck, Train
-
-from enum import IntEnum
+from creational.factory_method.data import Transport, Truck, Train
 
 
 class GroundTransport:
