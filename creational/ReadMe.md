@@ -23,3 +23,13 @@ Abstract Factory pattern example provides solution for game with two armies: Blu
 To run example, you simply need to run:
 
 > [abstract_factory_main.py](abstract_factory/abstract_factory_main.py)
+
+# Prototype pattern
+
+Prototype pattern example provides solution for fighting game with soldier armies. It's enough to create soldier prototype and then all new soldier can be cloned just by using `clone` method from soldier prototype instance. Let's Clone Wars begin!
+
+P.S. In real game implementation you can combine Abstract Factory to get Red/Blue soldier prototypes and Prototype pattern to actually create prototypes.
+
+To run example, you simply need to run:
+
+> [prototype_main.py](prototype/prototype_main.py)
