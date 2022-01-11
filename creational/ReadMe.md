@@ -33,3 +33,11 @@ P.S. In real game implementation you can combine Abstract Factory to get Red/Blu
 To run example, you simply need to run:
 
 > [prototype_main.py](prototype/prototype_main.py)
+
+# Singleton pattern
+
+Singleton pattern example provides God class, from which you can instance only once. P.S. Do not ask God to work on seventh day.
+
+To run example, you simply need to run:
+
+> [singleton_main.py](singleton/singleton_main.py)
