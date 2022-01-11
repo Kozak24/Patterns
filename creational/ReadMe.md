@@ -41,3 +41,11 @@ Singleton pattern example provides God class, from which you can instance only o
 To run example, you simply need to run:
 
 > [singleton_main.py](singleton/singleton_main.py)
+
+# Monostate pattern
+
+Monostate pattern example provides solution for game where character can have multiple classes and it's recreated in different scenes.
+
+To run example, you simply need to run:
+
+> [monostate_main.py](monostate/monostate_main.py)
