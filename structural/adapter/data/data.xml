@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persons>
+    <person>
+        <name>Jerar</name>
+        <last_name>Fernandes</last_name>
+        <age>27</age>
+    </person>
+    <person>
+        <name>Erza</name>
+        <last_name>Scarlet</last_name>
+        <age>25</age>
+    </person>
+</persons>
