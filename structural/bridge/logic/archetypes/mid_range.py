@@ -5,4 +5,4 @@ class MidRange(Archetype):
     _ARCHETYPE = "Mid-Range"
 
     def attack(self) -> None:
-        print(f"Attack from {self._ARCHETYPE}")
+        print(f"Attack from {self._ARCHETYPE} with {self.weapon} weapon")
