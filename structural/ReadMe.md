@@ -7,3 +7,11 @@ P.S. The parses is not universal and has its own constraints, implementation has
 To run example, you simply need to run:
 
 > [adapter_main.py](adapter/adapter_main.py)
+
+# Bridge pattern
+
+Bridge pattern example provides solution for RPG game with multiple races (Humans, Orcs, Elves, Gnomes, etc..) and multiple archetypes (Long Range, Mid-Range, Close Range). Usage of bridge pattern simplifies introduction of new archetypes as well as new races.
+
+To run example, you simply need to run:
+
+> [bridge_main.py](bridge/bridge_main.py)
