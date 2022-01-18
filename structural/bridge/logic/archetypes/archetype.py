@@ -1,6 +1,12 @@
-from abc import ABC
+from abc import ABC, abstractmethod
 
 
 class Archetype(ABC):
-    def __init__(self):
+    _ARCHETYPE = None
+
+    @abstractmethod
+    def attack(self) -> None:
         pass
+
+    def __str__(self) -> str:
+        return f"Archetype '{self._ARCHETYPE}'"
