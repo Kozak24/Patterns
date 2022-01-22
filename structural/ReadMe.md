@@ -15,3 +15,11 @@ Bridge pattern example provides solution for RPG game with multiple races (Human
 To run example, you simply need to run:
 
 > [bridge_main.py](bridge/bridge_main.py)
+
+# Decorator pattern
+
+Decorator pattern example provides primitive solution for logging and time measurement by wrapping object.
+
+To run example, you simply need to run:
+
+> [decorator_main.py](decorator/decorator_main.py)
