@@ -23,3 +23,11 @@ Decorator pattern example provides primitive solution for logging and time measu
 To run example, you simply need to run:
 
 > [decorator_main.py](decorator/decorator_main.py)
+
+# Composite pattern
+
+Composite pattern example provides solution for counting online order price in modern supermarket. Each order consists of packets, which consist of products and might contain packets too.
+
+To run example, you simply need to run:
+
+> [composite_main.py](composite/composite_main.py)
