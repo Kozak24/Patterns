@@ -31,3 +31,11 @@ Composite pattern example provides solution for counting online order price in m
 To run example, you simply need to run:
 
 > [composite_main.py](composite/composite_main.py)
+
+# Facade pattern
+
+Facade pattern example provides solution for text comparing ratio by using high-level API which hides from user low-level Cosine Similarity algorithm and Text Filter which removes redundant text by regex.
+
+To run example, you simply need to run:
+
+> [facade_main.py](facade/facade_main.py)
