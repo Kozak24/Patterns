@@ -39,3 +39,11 @@ Facade pattern example provides solution for text comparing ratio by using high-
 To run example, you simply need to run:
 
 > [facade_main.py](facade/facade_main.py)
+
+# Flyweight pattern
+
+Flyweight pattern example provides solution for storing shared data instead of creating it multiple times, in this example Color instance is stored as intrinsic value and created only once for each particular color.
+
+To run example, you simply need to run:
+
+> [flyweight_main.py](flyweight/flyweight_main.py)
