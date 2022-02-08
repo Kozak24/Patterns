@@ -4,3 +4,6 @@ class Color:
         self.red = red
         self.green = green
         self.blue = blue
+
+    def __str__(self) -> str:
+        return f"{self.name} Color #{self.red:0>2x}{self.green:0>2x}{self.blue:0>2x}"

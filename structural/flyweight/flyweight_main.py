@@ -1,12 +1,13 @@
-from structural.flyweight.logic.color_factory import ColorFactory
+from structural.flyweight.logic.shape import Shape
 
 
 def main() -> None:
-    color_factory = ColorFactory()
-    red = color_factory.get_color("Red", 1, 2, 3)
-    blue = color_factory.get_color("Red", 1, 2, 3)
-
-    print(red is blue)
+    red_shape = Shape("Red", 255, 0, 0)
+    green_shape = Shape("Green", 0, 255, 0)
+    blue_shape = Shape("Blue", 0, 0, 255)
+    shapes = (red_shape, green_shape, blue_shape)
+    for shape in shapes:
+        shape.draw()
 
 
 if __name__ == "__main__":
