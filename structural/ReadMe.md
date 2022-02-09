@@ -47,3 +47,11 @@ Flyweight pattern example provides solution for storing shared data instead of c
 To run example, you simply need to run:
 
 > [flyweight_main.py](flyweight/flyweight_main.py)
+
+# Proxy pattern
+
+Proxy pattern example provides solution for controlling user actions on object, in the implementation case it is simulation of Admin Panel. By default, Admin Panel can be controlled by anyone, with Admin Panel Proxy users with level lower than ADMIN neither can perform action nor can force log off of current admin user.
+
+To run example, you simply need to run:
+
+> [proxy_main.py](proxy/proxy_main.py)
