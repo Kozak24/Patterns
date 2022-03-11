@@ -4,6 +4,10 @@ This repository contains self-studying implementations of GoF patterns, all the 
 
 You can find each group of patterns by the appropriate links
 
+To run these examples you should use:
+
+> python >= 3.8
+
 [Behavioral Patterns](behavioral), please refer to the readme for more details: [ReadMe](behavioral/ReadMe.md)
 
 [Creational Patterns](creational), please refer to the readme for more details: [ReadMe](creational/ReadMe.md)
