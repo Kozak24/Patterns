@@ -1,13 +1,15 @@
 class MenuCommand:
     ACCEPT = "A"
     CANCEL = "C"
-    SELL = r"S(\d{1,})"
-    BUY = r"B(\d{1,})"
+    SELL = "S"
+    BUY = "B"
+    SELL_RE = r"S(\d{1,})"
+    BUY_RE = r"B(\d{1,})"
     UNDO = "U"
 
 
 class Menu:
-    __GAME_DESCRIPTION = (
+    __GAME_DESCRIPTION_STR = (
         "This example emulates trading system in games. There are two traders: Player and Merchant.\n"
         "Each trader has some amount of Gold which is displayed alongside with his name, also\n"
         "trader has items. Each item has index, name and its price. To provide some randomness\n"
@@ -15,19 +17,27 @@ class Menu:
         "kinda unique and sometimes due to randomness you or merchant won't be able to buy some or\n"
         "even any item if they don't have sufficient amount of Gold.\n"
     )
+    __MENU_COMMANDS_STR = (
+        "Here are listed available commands for use:\n"
+        f"{MenuCommand.SELL}<num> - Sells item to the second trader, for example 'S0' or 'S1', etc\n"
+        f"{MenuCommand.BUY}<num> - Buys item from the second trader, for example 'B0' or 'B1', etc\n"
+        f"{MenuCommand.ACCEPT} - Accepts trading and immediately finishes it\n"
+        f"{MenuCommand.CANCEL} - Cancels/Undos all made operations\n"
+        f"{MenuCommand.UNDO} - Undos last made operation\n"
+    )
+    __INPUT_STR = "Please write command to execute: "
 
-    def __init__(self, player, merchant):
+    def __init__(self, player, merchant) -> None:
         self._player = player
         self._merchant = merchant
 
-    def print_game_description(self):
-        print(self.__GAME_DESCRIPTION)
+    def print_game_description(self) -> None:
+        print(self.__GAME_DESCRIPTION_STR)
 
-    @staticmethod
-    def ask_for_input():
-        print("Please write command to execute: ")
+    def print_menu_commands(self) -> None:
+        print(self.__MENU_COMMANDS_STR)
 
-    def show_trade_panel(self):
+    def show_trade_panel(self) -> None:
         print(f"|{str(self._player):^50}|{str(self._merchant):^50}|")
         print(f"|{'':^50}|{'':^50}|")
 
@@ -40,8 +50,9 @@ class Menu:
 
         print()
 
-    @staticmethod
-    def get_user_input() -> str:
+    def get_user_input(self) -> str:
+        print(self.__INPUT_STR, end="")
         user_input = input()
+        print()
 
         return user_input

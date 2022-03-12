@@ -18,12 +18,12 @@ class GameManager:
 
     def start(self) -> None:
         self._menu.print_game_description()
+        self._menu.print_menu_commands()
         self._run_game()
 
     def _run_game(self) -> None:
         while self._continue_trading:
             self._menu.show_trade_panel()
-            self._menu.ask_for_input()
             user_input = self._menu.get_user_input()
             self._handle_menu_command(user_input)
 
@@ -36,10 +36,10 @@ class GameManager:
             self._accept_trade()
         elif MenuCommand.CANCEL == user_input:
             self._undo_all_actions()
-        elif match := re.match(MenuCommand.BUY, user_input):
+        elif match := re.match(MenuCommand.BUY_RE, user_input):
             item_index = int(match.group(1))
             self._trade_item(item_index, self._merchant, self._player)
-        elif match := re.search(MenuCommand.SELL, user_input):
+        elif match := re.search(MenuCommand.SELL_RE, user_input):
             item_index = int(match.group(1))
             self._trade_item(item_index, self._player, self._merchant)
         else:
