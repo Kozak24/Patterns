@@ -1,4 +1,4 @@
-from behavioral.command.logic import Menu
+from behavioral.command.logic import Menu, TradeCommand
 from behavioral.command.logic.generators import TraderGenerator
 
 

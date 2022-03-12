@@ -23,3 +23,5 @@ class Menu:
             player_item = f"S{index}. {self._player.items[index]}" if len(self._player.items) > index else ""
             merchant_item = f"B{index}. {self._merchant.items[index]}" if len(self._merchant.items) > index else ""
             print(f"|{player_item:^50}|{merchant_item:^50}|")
+
+        print()
