@@ -5,4 +5,3 @@ class GameManager:
 
     def start(self):
         pass
-

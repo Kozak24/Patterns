@@ -1,2 +1,2 @@
 from .item import Item
-from .person import Person
+from .trader import Trader

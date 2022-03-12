@@ -1,16 +1,13 @@
-from behavioral.command.data import Item, Person
 from behavioral.command.logic import Menu
+from behavioral.command.logic.generators import TraderGenerator
 
 
 def main() -> None:
-    item1 = Item("Idzuna Necklace", 30)
-    item2 = Item("Zendos Coat", 143)
+    player_generator = TraderGenerator("Player", 2)
+    merchant_generator = TraderGenerator("Merchant", 2)
 
-    item3 = Item("Mankeru Shoes", 59)
-    item4 = Item("Kinkaru Pants", 94)
-
-    player = Person("Player", [item1, item2], 25)
-    merchant = Person("Merchant", [item3, item4], 250)
+    player = player_generator.generate_person()
+    merchant = merchant_generator.generate_person()
 
     menu = Menu(player, merchant)
     menu.show_trade_panel()
