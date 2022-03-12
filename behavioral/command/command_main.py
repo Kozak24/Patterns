@@ -3,11 +3,10 @@ from behavioral.command.logic.generators import TraderGenerator
 
 
 def main() -> None:
-    player_generator = TraderGenerator("Player", 2)
-    merchant_generator = TraderGenerator("Merchant", 2)
+    trader_generator = TraderGenerator()
 
-    player = player_generator.generate_person()
-    merchant = merchant_generator.generate_person()
+    player = trader_generator.generate_trader("Player", 2)
+    merchant = trader_generator.generate_trader("Merchant", 2)
 
     menu = Menu(player, merchant)
     menu.show_trade_panel()

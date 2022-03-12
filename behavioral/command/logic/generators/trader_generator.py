@@ -9,17 +9,16 @@ class TraderGenerator:
     __MIN_GOLD = 0
     __MAX_GOLD = 250
 
-    def __init__(self, name: str, items_amount: int, gold: Optional[int] = None):
-        self._name = name
-        self._items_amount = items_amount
-        self._gold = gold if gold is not None else self._generate_random_gold()
+    def __init__(self):
+        self._items_generator = ItemsGenerator()
 
     def _generate_random_gold(self) -> int:
         return randint(self.__MIN_GOLD, self.__MAX_GOLD)
 
-    def generate_person(self):
+    def generate_trader(self, name: str, items_amount: int, gold: Optional[int] = None):
         items_generator = ItemsGenerator()
-        items = items_generator.generate_items(self._items_amount)
-        person = Trader(self._name, items, self._gold)
+        gold = gold if gold is not None else self._generate_random_gold()
+        items = items_generator.generate_items(items_amount)
+        person = Trader(name, items, gold)
 
         return person
