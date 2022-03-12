@@ -6,7 +6,7 @@ from behavioral.command.logic.generators import TraderGenerator
 
 
 class GameManager:
-    __GENERATE_ITEMS = 2
+    __GENERATE_ITEMS = 5
 
     def __init__(self) -> None:
         trader_generator = TraderGenerator()

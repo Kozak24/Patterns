@@ -21,7 +21,7 @@ class Menu:
         "Here are listed available commands for use:\n"
         f"{MenuCommand.SELL}<num> - Sells item to the second trader, for example 'S0' or 'S1', etc\n"
         f"{MenuCommand.BUY}<num> - Buys item from the second trader, for example 'B0' or 'B1', etc\n"
-        f"{MenuCommand.ACCEPT} - Accepts trading and immediately finishes it\n"
+        f"{MenuCommand.ACCEPT} - Accepts trading and immediately finishes execution\n"
         f"{MenuCommand.CANCEL} - Cancels/Undos all made operations\n"
         f"{MenuCommand.UNDO} - Undos last made operation\n"
     )

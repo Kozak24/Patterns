@@ -7,7 +7,7 @@ from behavioral.command.logic.generators import ItemsGenerator
 
 class TraderGenerator:
     __MIN_GOLD = 0
-    __MAX_GOLD = 250
+    __MAX_GOLD = 450
 
     def __init__(self) -> None:
         self._items_generator = ItemsGenerator()
