@@ -3,6 +3,16 @@ class Menu:
         self._player = player
         self._merchant = merchant
 
+    @staticmethod
+    def print_welcome_info():
+        welcome_info = (
+            "This example of Command design pattern demonstrates its usage within in game trading\n"
+            "operations. The main purpose is to wrap each operation as command, so the operation\n"
+            "can be reverted if succeeded.\n"
+        )
+
+        print(welcome_info)
+
     def show_trade_panel(self):
         print(f"|{str(self._player):^50}|{str(self._merchant):^50}|")
         print(f"|{'':^50}|{'':^50}|")

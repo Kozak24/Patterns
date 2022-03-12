@@ -1,15 +1,9 @@
-from behavioral.command.logic import Menu
-from behavioral.command.logic.generators import TraderGenerator
+from behavioral.command.logic import GameManager
 
 
 def main() -> None:
-    trader_generator = TraderGenerator()
-
-    player = trader_generator.generate_trader("Player", 2)
-    merchant = trader_generator.generate_trader("Merchant", 2)
-
-    menu = Menu(player, merchant)
-    menu.show_trade_panel()
+    game_manager = GameManager()
+    game_manager.start()
 
 
 if __name__ == "__main__":
