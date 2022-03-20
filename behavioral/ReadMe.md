@@ -15,3 +15,11 @@ The example is probably the most interactive among all provided. You can both se
 To run example, you simply need to run:
 
 > [command_main.py](command/command_main.py)
+
+# Interpreter pattern
+
+Interpreter pattern example provides very simple interpreter of addition and subtraction operations with integers.
+
+To run example, you simply need to run:
+
+> [interpreter_main.py](interpreter/interpreter_main.py)
