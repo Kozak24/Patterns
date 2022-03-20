@@ -12,7 +12,6 @@ class Lexer:
         symbol_index = 0
         tokens = list()
 
-        print(self._expression)
         while symbol_index < len(self._expression):
             symbol = self._expression[symbol_index]
 
