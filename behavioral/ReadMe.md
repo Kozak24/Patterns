@@ -23,3 +23,11 @@ Interpreter pattern example provides very simple interpreter of addition and sub
 To run example, you simply need to run:
 
 > [interpreter_main.py](interpreter/interpreter_main.py)
+
+# Iterator pattern
+
+Iterator pattern example provides solution for iterating Binary Tree graphs. There are two iterators: Breadth-First Search and Depth-First Search.
+
+To run example, you simply need to run:
+
+> [iterator_main.py](iterator/iterator_main.py)
