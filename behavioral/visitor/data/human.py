@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import Any
 
 from behavioral.visitor.data import NPC
 from behavioral.visitor.logic import BaseVisitor
@@ -10,5 +11,5 @@ class Human(NPC):
     name: str
     age: int
 
-    def accept(self, visitor: BaseVisitor) -> None:
-        visitor.visit_human(self)
+    def accept(self, visitor: BaseVisitor) -> Any:
+        return visitor.visit_human(self)

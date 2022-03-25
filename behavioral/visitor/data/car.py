@@ -1,4 +1,5 @@
 from dataclasses import dataclass
+from typing import Any
 
 from behavioral.visitor.data import NPC
 from behavioral.visitor.logic import BaseVisitor
@@ -11,5 +12,5 @@ class Car(NPC):
     max_speed: float
     passenger_capacity: int
 
-    def accept(self, visitor: BaseVisitor) -> None:
-        visitor.visit_car(self)
+    def accept(self, visitor: BaseVisitor) -> Any:
+        return visitor.visit_car(self)

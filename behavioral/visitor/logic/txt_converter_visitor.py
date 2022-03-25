@@ -8,9 +8,13 @@ if TYPE_CHECKING:
 
 
 class TxtConverterVisitor(BaseVisitor):
-    def visit_human(self, npc: Human) -> None:
-        print("Visit Human")
+    def visit_human(self, npc: Human) -> str:
+        human_txt = f"Type: {npc.type}\nName: {npc.name}\nAge: {npc.age}\n"
 
-    def visit_car(self, npc: Car) -> None:
-        print("Visit Car")
+        return human_txt
 
+    def visit_car(self, npc: Car) -> str:
+        car_txt = f"Type: {npc.type}\nName: {npc.name}\n" \
+                  f"Max Speed: {npc.max_speed}\nPassengers Capacity: {npc.passenger_capacity}"
+
+        return car_txt
