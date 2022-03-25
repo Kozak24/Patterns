@@ -31,3 +31,11 @@ Iterator pattern example provides solution for iterating Binary Tree graphs. The
 To run example, you simply need to run:
 
 > [iterator_main.py](iterator/iterator_main.py)
+
+# Visitor pattern
+
+Visitor pattern example provides demonstration on how can be applied additional operations with objects with minimal objects modification. In the example objects are converted to TXT, XML and JSON formats by using Visitor pattern approach and then saved into files. 
+
+To run example, you simply need to run:
+
+> [visitor_main.py](visitor/visitor_main.py)
