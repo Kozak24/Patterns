@@ -39,3 +39,13 @@ Visitor pattern example provides demonstration on how can be applied additional 
 To run example, you simply need to run:
 
 > [visitor_main.py](visitor/visitor_main.py)
+
+# Mediator pattern
+
+Mediator pattern implementation demonstrates conceptual example of Air Alarm Service (Unfortunately this is first thing that came into my mind due to ongoing russian war against Ukraine). People can subscribe to Air Alarm Service using mediator and Air Alarm Service can publish to People using mediator as well.  
+
+While it's simple example, here could be added more features like: unsubscribe and change the city, but these features are easy to implement, so if anyone wants to update example they might try on their own.
+
+To run example, you simply need to run:
+
+> [mediator_main.py](mediator/mediator_main.py)
