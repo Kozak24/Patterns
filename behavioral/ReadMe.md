@@ -32,14 +32,6 @@ To run example, you simply need to run:
 
 > [iterator_main.py](iterator/iterator_main.py)
 
-# Visitor pattern
-
-Visitor pattern example provides demonstration on how can be applied additional operations with objects with minimal objects modification. In the example objects are converted to TXT, XML and JSON formats by using Visitor pattern approach and then saved into files. 
-
-To run example, you simply need to run:
-
-> [visitor_main.py](visitor/visitor_main.py)
-
 # Mediator pattern
 
 Mediator pattern implementation demonstrates conceptual example of Air Alarm Service (Unfortunately this is first thing that came into my mind due to ongoing russian war against Ukraine). People can subscribe to Air Alarm Service using mediator and Air Alarm Service can publish to People using mediator as well.  
@@ -49,3 +41,19 @@ While it's simple example, here could be added more features like: unsubscribe a
 To run example, you simply need to run:
 
 > [mediator_main.py](mediator/mediator_main.py)
+
+# Observer pattern
+
+Observer pattern example demonstrates conceptual example of Newsletter system with subscription and unsubscription mechanism. User defines what topics he is interested in and receives newsletters in case published news article's topics contain at least one topic that user subscribed.
+
+To run example, you simply need to run:
+
+> [observer_main.py](observer/observer_main.py)
+
+# Visitor pattern
+
+Visitor pattern example provides demonstration on how can be applied additional operations with objects with minimal objects modification. In the example objects are converted to TXT, XML and JSON formats by using Visitor pattern approach and then saved into files. 
+
+To run example, you simply need to run:
+
+> [visitor_main.py](visitor/visitor_main.py)
