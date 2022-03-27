@@ -1,3 +1,11 @@
+# Abstract Factory pattern
+
+Abstract Factory pattern example provides solution for game with two armies: Blue and Red, for each created corresponding factory class.
+
+To run example, you simply need to run:
+
+> [abstract_factory_main.py](abstract_factory/abstract_factory_main.py)
+
 # Builder pattern
 
 Builder pattern example provides solution for Pizza baking. 
@@ -16,13 +24,13 @@ To run example, you simply need to run:
 
 > [factory_method_main.py](factory_method/factory_method_main.py)
 
-# Abstract Factory pattern
+# Monostate pattern
 
-Abstract Factory pattern example provides solution for game with two armies: Blue and Red, for each created corresponding factory class.
+Monostate pattern example provides solution for game where character can have multiple classes and it's recreated in different scenes.
 
 To run example, you simply need to run:
 
-> [abstract_factory_main.py](abstract_factory/abstract_factory_main.py)
+> [monostate_main.py](monostate/monostate_main.py)
 
 # Prototype pattern
 
@@ -41,11 +49,3 @@ Singleton pattern example provides God class, from which you can instance only o
 To run example, you simply need to run:
 
 > [singleton_main.py](singleton/singleton_main.py)
-
-# Monostate pattern
-
-Monostate pattern example provides solution for game where character can have multiple classes and it's recreated in different scenes.
-
-To run example, you simply need to run:
-
-> [monostate_main.py](monostate/monostate_main.py)
