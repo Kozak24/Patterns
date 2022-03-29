@@ -50,6 +50,21 @@ To run example, you simply need to run:
 
 > [observer_main.py](observer/observer_main.py)
 
+# State pattern
+
+State pattern example demonstrates usage of state-machine based on conceptual example of Ticket (such as JIRA system has). Particular states can be transitioned only to other particular states, see the table below.
+
+| \             | Open          | In Progress   | Resolved      | Closed        |
+| :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| Open          | -             | +             | +             | -             |
+| In Progress   | +             | -             | +             | -             |
+| Resolved      | +             | -             | -             | +             |
+| Closed        | +             | -             | -             | -             |
+
+To run example, you simply need to run:
+
+> [state_main.py](state/state_main.py)
+
 # Visitor pattern
 
 Visitor pattern example provides demonstration on how can be applied additional operations with objects with minimal objects modification. In the example objects are converted to TXT, XML and JSON formats by using Visitor pattern approach and then saved into files. 
