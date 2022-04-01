@@ -42,6 +42,14 @@ To run example, you simply need to run:
 
 > [mediator_main.py](mediator/mediator_main.py)
 
+# Memento pattern
+
+Memento pattern example demonstrates its usage for saving in-game progress of player and restoring data from one of the snapshots.
+
+To run example, you simply need to run:
+
+> [memento_main.py](memento/memento_main.py)
+
 # Observer pattern
 
 Observer pattern example demonstrates conceptual example of Newsletter system with subscription and unsubscription mechanism. User defines what topics he is interested in and receives newsletters in case published news article's topics contain at least one topic that user subscribed.
