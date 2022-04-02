@@ -73,6 +73,14 @@ To run example, you simply need to run:
 
 > [state_main.py](state/state_main.py)
 
+# Strategy pattern
+
+Strategy pattern example demonstrates very primitive usage of Strategy pattern by providing different representations of object such as XML and JSON. In this demo there are no additional logic on high-level class that operates with Strategies, but basically in most cases high-level class also has additional logic to further process data etc.
+
+To run example, you simply need to run:
+
+> [strategy_main.py](strategy/strategy_main.py)
+
 # Template Method pattern
 
 Template Method pattern example demonstrates its usage based on file reading. First template read data from local source, second template read raw data from URL. Both of them are inherited and use shared methods from parent template class.
