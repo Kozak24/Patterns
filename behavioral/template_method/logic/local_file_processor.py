@@ -1,0 +1,2 @@
+class LocalFileProcessor:
+    pass

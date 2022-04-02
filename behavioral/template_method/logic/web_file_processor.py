@@ -1,0 +1,2 @@
+class WebFileProcessor:
+    pass
