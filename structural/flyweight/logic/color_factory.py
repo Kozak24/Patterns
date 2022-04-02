@@ -1,4 +1,4 @@
-from structural.flyweight.logic.color import Color
+from structural.flyweight.logic import Color
 
 
 class ColorFactory:

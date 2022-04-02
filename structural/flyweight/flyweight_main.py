@@ -1,4 +1,4 @@
-from structural.flyweight.logic.shape import Shape
+from structural.flyweight.logic import Shape
 
 
 def main() -> None:

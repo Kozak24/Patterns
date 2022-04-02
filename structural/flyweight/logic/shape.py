@@ -1,10 +1,10 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
 
-from structural.flyweight.logic.color_factory import ColorFactory
+from structural.flyweight.logic import ColorFactory
 
 if TYPE_CHECKING:
-    from structural.flyweight.logic.color import Color
+    from structural.flyweight.logic import Color
 
 
 class Shape:
