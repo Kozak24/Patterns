@@ -73,6 +73,14 @@ To run example, you simply need to run:
 
 > [state_main.py](state/state_main.py)
 
+# Template Method pattern
+
+Template Method pattern example demonstrates its usage based on file reading. First template read data from local source, second template read raw data from URL. Both of them are inherited and use shared methods from parent template class.
+
+To run example, you simply need to run:
+
+> [template_method_main.py](template_method/template_method_main.py)
+
 # Visitor pattern
 
 Visitor pattern example provides demonstration on how can be applied additional operations with objects with minimal objects modification. In the example objects are converted to TXT, XML and JSON formats by using Visitor pattern approach and then saved into files. 
