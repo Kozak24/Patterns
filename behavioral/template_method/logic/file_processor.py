@@ -3,7 +3,7 @@ import re
 
 
 class FileProcessor(ABC):
-    _LINE_ENDING_RE = r"[ ]*\n"
+    _LINE_ENDING_RE = r"[ ]*(\n|$)"
     _REPLACING_STRING = " Pattern\n"
 
     def __init__(self, file_path: str) -> None:
